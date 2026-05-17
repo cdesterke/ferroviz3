@@ -1,0 +1,18 @@
+Package: ferroviz3
+Type: Package
+Title: Analyses of ferroptosis genes in a human limma result
+Version: 1.0.0
+Authors@R: c(
+    person(
+      "Christophe", "Desterke",
+      email = "christophe.desterke@gmail.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: Starting from a limma results between two groups from human
+    experiment, analyse of ferroptosis related genes.
+    Data were cross with KEGG metabolism and mitochondria databases.
+License: GNU
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
