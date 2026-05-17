@@ -66,3 +66,12 @@ load(kegg2)
 heatmap_ferro_kegg(resulths, kegg2, fc = 0.1)
 ```
 ![kegg](https://github.com/cdesterke/ferroviz3/blob/main/kegg.png)
+
+
+# REFERENCES
+
+> Zhou N, Peng L, Luo Q, Yin T, Sun H, Zhang Y, Shi X, Peng X, Bao J, Ning Y, Yuan X. FerrDb V3: expanding the manually curated resource for regulators and disease associations from ferroptosis to regulated cell death. Nucleic Acids Res. 2026 Jan 6;54(D1):D572-D582. doi: 10.1093/nar/gkaf1119. PMID: 41171133; PMCID: PMC12807728.
+
+> Kanehisa M, Goto S. KEGG: kyoto encyclopedia of genes and genomes. Nucleic Acids Res. 2000 Jan 1;28(1):27-30. doi: 10.1093/nar/28.1.27. PMID: 10592173; PMCID: PMC102409.
+
+> Calvo SE, Clauser KR, Mootha VK. MitoCarta2.0: an updated inventory of mammalian mitochondrial proteins. Nucleic Acids Res. 2016 Jan 4;44(D1):D1251-7. doi: 10.1093/nar/gkv1003. Epub 2015 Oct 7. PMID: 26450961; PMCID: PMC4702768.
