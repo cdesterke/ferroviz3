@@ -52,3 +52,17 @@ data(mito)
 heatmap_ferro_mito(resulths, mito, fc = 0.1)
 ```
 ![mito](https://github.com/cdesterke/ferroviz3/blob/main/mito.png)
+
+## metabolism KEGG abbreviation table
+```r
+kegg_table <- as.data.frame(table_kegg_abbrev(kegg2))
+print(kegg_table)
+```
+![abb](https://github.com/cdesterke/ferroviz3/blob/main/abb.png)
+
+## heatmap significant ferroptosis versus metabolism KEGG
+```r
+load(kegg2)
+heatmap_ferro_kegg(resulths, kegg2, fc = 0.1)
+```
+![kegg](https://github.com/cdesterke/ferroviz3/blob/main/kegg.png)
