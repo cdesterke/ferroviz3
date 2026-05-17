@@ -44,3 +44,11 @@ head(table)
 write.csv(table,file="ferroptosis_features.csv",row.names=F)
 ```
 ![table](https://github.com/cdesterke/ferroviz3/blob/main/table.png)
+
+
+## heatmap significant ferroptosis versus mitochondria
+```r
+data(mito)
+heatmap_ferro_mito(resulths, mito, fc = 0.1)
+```
+![mito](https://github.com/cdesterke/ferroviz3/blob/main/mito.png)
