@@ -9,12 +9,29 @@ install_github("cdesterke/ferroviz3")
 ```
 
 
-## load data
+## load data and volcanoplot on limma output
 ```r
 library(ferroviz3)
 load(resulths)
 load(ferrdb)
+volcano_ferroptosis(
+  resulths,
+  ferrdb,
+  fc_thresh = 0.5,
+  p_thresh = 0.05,
+  plot_title = "DEGs and ferroptosis",
+  base_size = 14,
+  label_size = 4
+)
 
 ```
 
-![res](https://github.com/cdesterke/ferroviz3/blob/main/volcano.png)
+![volcano](https://github.com/cdesterke/ferroviz3/blob/main/volcano.png)
+
+
+## load data and volcanoplot on limma output
+```r
+
+
+```
+![bar](https://github.com/cdesterke/ferroviz3/blob/main/barplot.png)
