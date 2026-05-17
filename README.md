@@ -29,9 +29,16 @@ volcano_ferroptosis(
 ![volcano](https://github.com/cdesterke/ferroviz3/blob/main/volcano.png)
 
 
-## load data and volcanoplot on limma output
+## barplot of ferroptosis related features
 ```r
-
+barploths(resulths, ferrdb, fc = 0.25, size = 16)
 
 ```
 ![bar](https://github.com/cdesterke/ferroviz3/blob/main/barplot.png)
+
+
+## table of significant ferroptosis related features
+```r
+barploths(resulths, ferrdb, fc = 0.25, size = 16)
+
+```
