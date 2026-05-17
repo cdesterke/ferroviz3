@@ -12,8 +12,8 @@ install_github("cdesterke/ferroviz3")
 ## load data and volcanoplot on limma output
 ```r
 library(ferroviz3)
-load(resulths)
-load(ferrdb)
+data(resulths)
+data(ferrdb)
 volcano_ferroptosis(
   resulths,
   ferrdb,
@@ -39,6 +39,8 @@ barploths(resulths, ferrdb, fc = 0.25, size = 16)
 
 ## table of significant ferroptosis related features
 ```r
-barploths(resulths, ferrdb, fc = 0.25, size = 16)
-
+table<-export_ferroptosis_table(resulths, ferrdb, fc = 0.25)
+head(table)
+write.csv(table,file="ferroptosis_features.csv",row.names=F)
 ```
+![table](https://github.com/cdesterke/ferroviz3/blob/main/table.png)
